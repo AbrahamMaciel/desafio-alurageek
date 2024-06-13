@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio AluraGeek!</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>YEAAHHHHHHHH BOIIIIIIII!!</h1>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">AluraGeek</h1>
+    </header>
+    <main>
+      <section class="lista-productos">
+        <h1>Mis Productos</h1>
+      </section>
+
+      <section class="formulario-productos">
+        <h1>Agregar Producto:</h1>
+        <form class="formulario__form">
+          <div class="input__label__container">
+            <div class="label__container">
+              <label for="input__nombre" class="inputs__label">Nombre:</label>
+            </div>
+            <input
+              title="nombre"
+              type="text"
+              class="input nombre"
+              id="input__nombre"
+              placeholder="nombre..."
+            />
+          </div>
+
+          <div class="input__label__container">
+            <div class="label__container">
+              <label for="input__precio" class="inputs__label">Precio:</label>
+            </div>
+            <input
+              title="precio"
+              type="text"
+              class="inputs__precio"
+              id="input__precio"
+              placeholder="precio..."
+            />
+          </div>
+
+          <div class="input__label__container">
+            <div class="label__container">
+              <label for="input__imagen" class="inputs__label">Imagen:</label>
+            </div>
+            <input
+              title="imagen"
+              type="text"
+              class="inputs__imagen"
+              id="input__imagen"
+              placeholder="imagen..."
+            />
+          </div>
+
+          <div class="formulario__buttons">
+            <button title="enviar" class="buttons__enviar" type="submit">
+              Enviar
+            </button>
+            <button
+              title="limpiar campos"
+              class="buttons__limpiar-campos"
+              type="reset"
+            >
+              Limpiar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>Made in china</footer>
+  </body>
 </html>

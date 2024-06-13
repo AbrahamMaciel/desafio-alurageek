@@ -1,0 +1,140 @@
+:root{
+  --color-boton: #0646f9;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: #00c850;
+  padding: 0.5rem 0rem;
+}
+
+header > h1.title {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+section.lista-productos {
+  background-color: red;
+}
+
+section.formulario-productos {
+  /* background-color: blue; */
+  padding-bottom: 1rem;
+}
+
+form.formulario__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+div.input__label__container {
+  display: flex;
+  width: 100%;
+}
+
+div.label__container {
+  display: flex;
+  background-color: #00c850;
+  height: 2rem;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+div.input__label__container > input {
+  padding-left: 0.5rem;
+  flex-grow: 1;
+  border: 2px solid #00c850;
+}
+
+div.input__label__container > input:focus {
+  border: 3px solid #00c850;
+  outline: 0 none;
+}
+
+div.formulario__buttons {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+}
+
+div.formulario__buttons > button {
+  font-family: 'Jaro', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  background-color: var(--color-boton);
+  border-radius: 2px;
+  width: 50%; 
+  border: 2px solid var(--color-boton);
+  height: 2.5rem;
+}
+
+div.formulario__buttons > button:last-child {
+  background-color: white;
+  color: var(--color-boton);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: turquoise;
+}
+
+/* Margins and paddings of elements */
+
+h1 {
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 320px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+  }
+
+  section.lista-productos {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  section.formulario-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form.formulario__form {
+    width: 80%;
+  }
+
+  div.formulario__inputs {
+    display: flex;
+    width: 100%;
+  }
+}
