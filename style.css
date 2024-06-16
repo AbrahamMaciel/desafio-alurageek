@@ -25,10 +25,13 @@ header > h1.title {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
 }
 
 section.lista-productos {
-  background: rgb(78, 255, 131);
+  /* background: rgb(78, 255, 131); */
   background: linear-gradient(
     270deg,
     rgba(78, 255, 131, 1) 31%,
@@ -58,7 +61,7 @@ div.lista-productos__container {
   gap: 1rem;
   width: 90%;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   padding: 0.6rem 0;
   flex-wrap: wrap;
 }
@@ -67,7 +70,7 @@ div.lista-productos__card {
   background-color: gold;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border-radius: 5px;
   padding: 0.5rem 0rem;
@@ -95,8 +98,16 @@ div.card__info__value {
   align-items: center;
 }
 
+div.lista-productos__nota{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
 section.formulario-productos {
-  /* background-color: blue; */
   padding-bottom: 1rem;
 }
 
@@ -191,7 +202,7 @@ a.footer__link-container__link {
 
 h1 {
   margin: 1rem;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
 }
 
 @media only screen and (min-width: 320px) {
@@ -207,7 +218,9 @@ h1 {
     flex-grow: 1;
   }
 
-  /* section.lista-productos {} */
+  img.title__logo{
+    width: 34px;
+  }
 
   section.formulario-productos {
     display: flex;
@@ -227,12 +240,46 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
+  img.title__logo{
+    width: unset;
+  }
+
+  header > h1.title{
+    font-size: 2.8rem;
+  }
+
   div.lista-productos__card {
     width: calc(25% - 1rem);
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  html{
+    font-size: 18px;
+  }
+
+  main{
+    flex-direction: row;
+    background-color: #00c850;
+  }
+
+  header > h1.title{
+    font-size: 2.8rem;
+  }
+
+  div.lista-productos__container{
+    max-height: 50dvh;
+    overflow: auto;
+    width: 100%;
+  }
+
+  section.formulario-productos{
+    justify-content: start;
+    min-width: 40%;
+    border-radius: 3px;
+    background-color: white;
+  }
+
   div.lista-productos__card {
     width: calc(20% - 1rem);
   }
