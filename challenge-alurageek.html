@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio AluraGeek!</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>YEAAHHHHHHHH BOIIIIIIII!!</h1>
-</body>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">
+        <img class="title__logo" src="./img/space-mutha.png" /><img
+          class="title__logo"
+          src="./img/space-mutha.png"
+        />AluraGeek<img class="title__logo" src="./img/space-mutha.png" /><img
+          class="title__logo"
+          src="./img/space-mutha.png"
+        />
+      </h1>
+    </header>
+    <main>
+      <section class="lista-productos">
+        <h1 class="lista-productos__titulo">Mis Productos:</h1>
+        <h2 class="lista-productos lista-productos__mensaje--d-none">
+          No se han agregado Productos.
+        </h2>
+
+        <div class="lista-productos__container">
+          <div class="lista-productos__card">
+            <img class="card__img" src="./img/stormtroopa.png" />
+            <div class="card__info">
+              <p class="card__info__nombre">Stormtrooper</p>
+              <div class="card__info__value">
+                <p class="info__value">$3.15</p>
+                <img src="./img/trashIcon.png" class="info__trash-icon" />
+              </div>
+            </div>
+          </div>
+
+          <div class="lista-productos__card">
+            <img class="card__img" src="./img/gameboi.png" />
+            <div class="card__info">
+              <p class="card__info__nombre">Gameboy</p>
+              <div class="card__info__value">
+                <p class="info__value">$300</p>
+                <img src="./img/trashIcon.png" class="info__trash-icon" />
+              </div>
+            </div>
+          </div>
+
+          <div class="lista-productos__card">
+            <img class="card__img" src="./img/stormtroopa.png" />
+            <div class="card__info">
+              <p class="card__info__nombre">Sturmtruppe</p>
+              <div class="card__info__value">
+                <p class="info__value">$3.15</p>
+                <img src="./img/trashIcon.png" class="info__trash-icon" />
+              </div>
+            </div>
+          </div>
+
+          <div class="lista-productos__card">
+            <img class="card__img" src="./img/gameboi.png" />
+            <div class="card__info">
+              <p class="card__info__nombre">Gameboy Classic</p>
+              <div class="card__info__value">
+                <p class="info__value">$300</p>
+                <img src="./img/trashIcon.png" class="info__trash-icon" />
+              </div>
+            </div>
+          </div>
+
+          <div class="lista-productos__card">
+            <img class="card__img" src="./img/stormtroopa.png" />
+            <div class="card__info">
+              <p class="card__info__nombre">Stormtrooper (Special Edition)</p>
+              <div class="card__info__value">
+                <p class="info__value">$3.15</p>
+                <img src="./img/trashIcon.png" class="info__trash-icon" />
+              </div>
+            </div>
+          </div>
+
+          <div class="lista-productos__card">
+            <img class="card__img" src="./img/gameboi.png" />
+            <div class="card__info">
+              <p class="card__info__nombre">Gameboy Classic</p>
+              <div class="card__info__value">
+                <p class="info__value">$300</p>
+                <img src="./img/trashIcon.png" class="info__trash-icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lista-productos__nota">
+          <p>
+            Nota: era parte del requerimiento que la seccion productos este
+            limitada a 50vh
+          </p>
+          <p>(Graphic design is mah passhun...)</p>
+        </div>
+      </section>
+
+      <section class="formulario-productos">
+        <h1>Agregar Producto:</h1>
+        <form class="formulario__form">
+          <div class="input__label__container">
+            <div class="label__container">
+              <label for="input__nombre" class="inputs__label">Nombre:</label>
+            </div>
+            <input
+              title="nombre"
+              type="text"
+              class="input nombre"
+              id="input__nombre"
+              placeholder="nombre..."
+            />
+          </div>
+
+          <div class="input__label__container">
+            <div class="label__container">
+              <label for="input__precio" class="inputs__label">Precio:</label>
+            </div>
+            <input
+              title="precio"
+              type="text"
+              class="inputs__precio"
+              id="input__precio"
+              placeholder="precio..."
+            />
+          </div>
+
+          <div class="input__label__container">
+            <div class="label__container">
+              <label for="input__imagen" class="inputs__label">Imagen:</label>
+            </div>
+            <input
+              title="imagen"
+              type="text"
+              class="inputs__imagen"
+              id="input__imagen"
+              placeholder="imagen..."
+            />
+          </div>
+
+          <div class="formulario__buttons">
+            <button title="enviar" class="buttons__enviar" type="submit">
+              Enviar
+            </button>
+            <button
+              title="limpiar campos"
+              class="buttons__limpiar-campos"
+              type="reset"
+            >
+              Limpiar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p class="footer__title">AluraGeek</p>
+      <p class="footer__subtitle">Hecho for Abraham Fernandez</p>
+      <div class="footer__link-container">
+        <img
+          class="footer__link-container__logo"
+          src="./img/github-mark-white.png"
+        />
+        <a
+          href="https://github.com/AbrahamMaciel/desafio-alurageek"
+          class="footer__link-container__link"
+          target="_blank"
+          >Repositorio</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
