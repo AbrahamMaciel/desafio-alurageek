@@ -1,0 +1,11 @@
+{
+  "name": "desafio-alurageek",
+  "version": "1.0.0",
+  "description": "Un desafio de alura para practicar el uso de API's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abraham Maciel Fernandez",
+  "license": "ISC"
+}

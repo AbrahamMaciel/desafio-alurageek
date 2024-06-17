@@ -33,7 +33,7 @@
           No se han agregado Productos.
         </h2>
 
-        <div class="lista-productos__container">
+        <div class="lista-productos__container" data-lista-productos>
           <div class="lista-productos__card">
             <img class="card__img" src="./img/stormtroopa.png" />
             <div class="card__info">
@@ -111,7 +111,8 @@
 
       <section class="formulario-productos">
         <h1>Agregar Producto:</h1>
-        <form class="formulario__form">
+
+        <form class="formulario__form" data-form>
           <div class="input__label__container">
             <div class="label__container">
               <label for="input__nombre" class="inputs__label">Nombre:</label>
@@ -122,6 +123,9 @@
               class="input nombre"
               id="input__nombre"
               placeholder="nombre..."
+              data-nombre
+              minlength="3"
+              required
             />
           </div>
 
@@ -135,6 +139,8 @@
               class="inputs__precio"
               id="input__precio"
               placeholder="precio..."
+              data-precio
+              required
             />
           </div>
 
@@ -148,6 +154,8 @@
               class="inputs__imagen"
               id="input__imagen"
               placeholder="imagen..."
+              data-imagen
+              required
             />
           </div>
 
@@ -182,5 +190,7 @@
         >
       </div>
     </footer>
+    <script src="./js/listProducts.js" type="module"></script>
+    <script src="./js/uploadProducts.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Stormtrooper",
+      "precio": "3.15",
+      "imagen": "./img/stormtroopa.png"
+    },
+    {
+      "id": "2",
+      "nombre": "Gameboy Classic",
+      "precio": "150",
+      "imagen": "./img/gameboi.png"
+    },
+    {
+      "id": "20aa",
+      "nombre": "crap",
+      "precio": "999",
+      "imagen": "./img/stormtroopa.png"
+    },
+    {
+      "id": "a35d",
+      "nombre": "dogshit",
+      "precio": "1",
+      "imagen": "./img/stormtroopa.png"
+    }
+  ]
+}
