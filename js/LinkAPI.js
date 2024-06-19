@@ -31,7 +31,19 @@ async function uploadProduct(nombre, precio, imagen) {
   return parsedConnection;
 }
 
+async function deleteProduct(id) {
+  const targetUrl = `http://localhost:3000/productos/${id}`;
+  const connection = await fetch(targetUrl, {
+    method: "DELETE",
+  });
+
+  if (!connection.ok) {
+    throw new Error("Hubo un problema eliminando productos");
+  }
+}
+
 export const apiConnection = {
   listProducts,
   uploadProduct,
+  deleteProduct,
 };

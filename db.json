@@ -14,15 +14,21 @@
     },
     {
       "id": "20aa",
-      "nombre": "crap",
-      "precio": "999",
+      "nombre": "Stormtruppa",
+      "precio": "5",
       "imagen": "./img/stormtroopa.png"
     },
     {
       "id": "a35d",
-      "nombre": "dogshit",
-      "precio": "1",
-      "imagen": "./img/stormtroopa.png"
+      "nombre": "Gameboy Lite",
+      "precio": "75",
+      "imagen": "./img/gameboi.png"
+    },
+    {
+      "id": "acea",
+      "nombre": "Baby Yoda",
+      "precio": "99999",
+      "imagen": "./img/baby-yoda.jpg"
     }
   ]
 }

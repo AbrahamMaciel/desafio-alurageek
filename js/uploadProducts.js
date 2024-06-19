@@ -6,8 +6,6 @@ const form = document.querySelector("[data-form]");
 async function createProduct(event) {
   event.preventDefault();
 
-  console.log('auuuuuuuuu');
-
   const nombre = document.querySelector("[data-nombre]").value;
   const precio = document.querySelector("[data-precio]").value;
   const imagen = document.querySelector("[data-imagen]").value;
