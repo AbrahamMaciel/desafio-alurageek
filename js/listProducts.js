@@ -17,24 +17,6 @@ export default function createCard(nombre, precio, imagen, id) {
     </div>
     `;
 
-  //Esto al parecer se llama Event Delegation
-  //Medio que no me convence que la llamada al delete sea dentro de createCard me pregunto si se podra modularizar porque me quede con un deleteProduct.js vacio...
-  productCard.addEventListener("click", async (event) => {
-    event.preventDefault();
-    
-    if (event.target.className == "info__trash-icon") {
-      const card = event.target.closest(".lista-productos__card");
-      const idCard = event.target.closest(".lista-productos__card").dataset.id;
-
-      try{
-        await apiConnection.deleteProduct(idCard);
-        card.remove();
-      } catch(e){
-        console.error("Hubo un problema eliminando productos", e);
-      }
-    }
-  });
-
   return productCard;
 }
 
