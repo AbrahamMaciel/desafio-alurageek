@@ -9,3 +9,4 @@ Desafío de Alura para practicar:
 - Responsive web design
 - BEM methodology
 - Git
+- Uso de Json-server
